@@ -1,0 +1,65 @@
+.btns {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border-radius: 10px 10px 0 0px;
+    padding: 5px;
+    background-color: #373737;
+    gap: 5px;
+    border-bottom: solid 1px black;
+    color: black;
+    padding-left: 10px;
+}
+
+#closeBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: rgb(227, 1, 1);
+}
+
+#closeBtn:active {
+    background-color: red;
+}
+
+.btns * {
+    cursor: pointer;
+}
+
+#minBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: rgb(231, 231, 0);
+    font-size: 25px;
+}
+
+#minBtn:active {
+    background-color: yellow;
+}
+
+#maxBtn {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: rgb(153, 230, 0);
+}
+
+#maxBtn:active {
+    background-color: rgb(170, 255, 0);
+}

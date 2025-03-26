@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.06);
+    color: white;
+    min-width: 100%;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+.fa-apple{
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    gap: 30px;
+    padding-right: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

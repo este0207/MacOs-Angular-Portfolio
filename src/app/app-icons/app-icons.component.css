@@ -1,0 +1,12 @@
+img {
+    width: 70px;
+    transition: 0.2s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+img:active {
+    filter: brightness(50%);
+}

@@ -1,0 +1,30 @@
+.fenetre {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    aspect-ratio: 1/1;
+    width: 30%;
+    top: 20%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.fenetre.active {
+    display: flex;
+}
+.contente {
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+
+.contente textarea {
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    resize: none;
+    height: 50vh;
+    outline: none;
+}
