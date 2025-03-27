@@ -6,7 +6,9 @@
     <!-- <app-fenetre (remove)="onQuitMail($event)"></app-fenetre> -->
     <app-fenetre-mail (remove)="onQuitMail($event)"></app-fenetre-mail>
 }
-<!-- <app-fenetre-photo></app-fenetre-photo> -->
+@if (isPhotoVisible==true) {
+    <app-fenetre-photo (remove)="onQuitPhoto($event)"></app-fenetre-photo>
+}
  @if (isSafariVisible==true) {
      <app-fenetre-safari (remove)="onQuitSafari($event)"></app-fenetre-safari>
  }

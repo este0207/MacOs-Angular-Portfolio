@@ -7,11 +7,10 @@ import { FenetreNoteComponent } from "./fenetre-note/fenetre-note.component";
 import { FenetreMailComponent } from './fenetre-mail/fenetre-mail.component';
 import { FenetreSafariComponent } from "./fenetre-safari/fenetre-safari.component";
 import { FenetrePhotoComponent } from "./fenetre-photo/fenetre-photo.component";
-import { FenetreComponent } from './fenetre/fenetre.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,FenetreComponent ,NavBarComponent, AppBarComponent, FoldersComponent, FenetreNoteComponent, FenetreMailComponent, FenetreSafariComponent, FenetrePhotoComponent],
+  imports: [RouterOutlet,NavBarComponent, AppBarComponent, FoldersComponent, FenetreNoteComponent, FenetreMailComponent, FenetreSafariComponent, FenetrePhotoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,6 +20,7 @@ export class AppComponent {
   isMailVisible = false;
   isNoteVisible = false;
   isSafariVisible = false;
+  isPhotoVisible = false;
 
   
   onShowWindows(event: string) {
@@ -30,6 +30,8 @@ export class AppComponent {
       this.isNoteVisible = true;
     } if (event == "safari") {
       this.isSafariVisible = true;
+    } if (event == "photo") {
+      this.isPhotoVisible = true;
     }
     console.log(event);
     
@@ -43,5 +45,9 @@ export class AppComponent {
   }
   onQuitSafari(event:any) {
     this.isSafariVisible = false;
+  }
+
+  onQuitPhoto(event:any) {
+    this.isPhotoVisible = false;
   }
 }

@@ -4,10 +4,7 @@
     flex-direction: column;
     width: 70%;
     top: 10%;
-}
-
-.fenetre3.active {
-    display: flex;
+    left: 10%;
 }
 
 .contente3 {

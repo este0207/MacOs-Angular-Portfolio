@@ -8,6 +8,7 @@
     right: 5%;
     width: 7%;
     color: white;
+    z-index: -1;
     font-size: 15px;
     border-radius: 10px;
 }
