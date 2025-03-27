@@ -1,7 +1,7 @@
 <div class="bar">
-    <app-app-icons></app-app-icons>
-    <app-app-icons url="/icons/mail.png"></app-app-icons>
-    <app-app-icons url="/icons/note.png"></app-app-icons>
-    <app-app-icons url="/icons/photo.png"></app-app-icons>
-    <app-app-icons url="/icons/safari.png"></app-app-icons>
+    <app-app-icons iconclass="findericon"></app-app-icons>
+    <app-app-icons url="/icons/mail.png" iconclass="mailicon" (click)="ShowMail()"></app-app-icons>
+    <app-app-icons url="/icons/note.png" iconclass="noteicon" (click)="ShowNote()"></app-app-icons>
+    <app-app-icons url="/icons/photo.png" iconclass="photoicon"></app-app-icons>
+    <app-app-icons url="/icons/safari.png" iconclass="safariison" (click)="ShowSafari()"></app-app-icons>
 </div>

@@ -1,5 +1,15 @@
 <app-nav-bar></app-nav-bar>
-<app-fenetre-note></app-fenetre-note>
+@if (isNoteVisible==true) {
+    <app-fenetre-note (remove)="onQuitNote($event)"></app-fenetre-note>
+}
+@if (isMailVisible==true) {
+    <!-- <app-fenetre (remove)="onQuitMail($event)"></app-fenetre> -->
+    <app-fenetre-mail (remove)="onQuitMail($event)"></app-fenetre-mail>
+}
+<!-- <app-fenetre-photo></app-fenetre-photo> -->
+ @if (isSafariVisible==true) {
+     <app-fenetre-safari (remove)="onQuitSafari($event)"></app-fenetre-safari>
+ }
 <app-folders></app-folders>
 <app-folders text="Comming Soon..." stylefolder="two"></app-folders>
-<app-app-bar></app-app-bar>
+<app-app-bar (exec)="onShowWindows($event)"></app-app-bar>

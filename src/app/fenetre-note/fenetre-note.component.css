@@ -10,9 +10,6 @@
     border-radius: 20px;
 }
 
-.fenetre.active {
-    display: flex;
-}
 .contente {
     display: flex;
     padding: 10px;

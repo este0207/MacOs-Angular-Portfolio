@@ -41,3 +41,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
+#date {
+    font-size: 20px;
+}

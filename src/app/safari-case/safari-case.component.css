@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 1px 1px 5px black;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

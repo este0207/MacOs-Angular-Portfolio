@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-mac-btn',
@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class MacBtnComponent {
 
+  remove = output();
+
+  RemoveScreen() {
+    console.log("test");
+    this.remove.emit();
+  }
 }

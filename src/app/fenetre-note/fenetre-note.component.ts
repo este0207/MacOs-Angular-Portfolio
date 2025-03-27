@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { MacBtnComponent } from '../mac-btn/mac-btn.component';
+
+
 
 @Component({
   selector: 'app-fenetre-note',
@@ -9,4 +11,10 @@ import { MacBtnComponent } from '../mac-btn/mac-btn.component';
 })
 export class FenetreNoteComponent {
 
+remove = output();
+
+  onQuit() {
+    this.remove.emit();
+  }
+  
 }

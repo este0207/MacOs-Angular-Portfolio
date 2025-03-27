@@ -1,0 +1,44 @@
+.fenetre2 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 70%;
+    top: 10%;
+    left: 10%;
+}
+
+.contente2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Safari-bg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* aspect-ratio: 1/1; */
+    top: 20%;
+    left: 10%;
+    /* padding: 10px; */
+    border-radius: 0 0 20px 20px;
+    color: white;
+}
+
+.main {
+    padding: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.sites {
+    display: flex;
+    gap: 20px;
+}
+
+.cube {
+    background-color: #37373762;
+    padding: 30px;
+    border-radius: 10px;
+}
